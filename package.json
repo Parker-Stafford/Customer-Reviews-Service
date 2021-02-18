@@ -11,8 +11,8 @@
     "build": "webpack -d -watch",
     "start:dev": "nodemon ./server/index.js",
     "start": "node ./server/index.js",
-    "start:pm2": "pm2 start ./server/index.js",
-    "stop:pm2": "pm2 stop ./server/index.js",
+    "start:pm2": "pm2 start ./server/index.js reviews",
+    "stop:pm2": "pm2 stop reviews",
     "seed": "sudo mysql -u root < database/schema.sql && node ./database/seeder/fakeData.js",
     "test": "jest"
   },
